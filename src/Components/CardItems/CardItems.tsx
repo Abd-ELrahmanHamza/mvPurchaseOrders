@@ -3,15 +3,15 @@ import Accordion from "react-bootstrap/Accordion";
 
 // Import components
 import OrderDetails from "../OrderDetails/OrderDetails";
+import OrderMetaInfo from "../OrderMetaInfo/OrderMetaInfo";
 
 // Import styled components
 import { AccordionHeader, AccordionBody } from "./CardItems.styled";
 
 // Import data
 import { data } from "../../Data/data";
-import OrderMetaInfo from "../OrderMetaInfo/OrderMetaInfo";
 
-const CardItem = () => {
+const CardItems = () => {
   return (
     <Accordion>
       {data["mvPurchaseOrders"].map((item, index) => (
@@ -34,4 +34,4 @@ const CardItem = () => {
   );
 };
 
-export default CardItem;
+export default CardItems;

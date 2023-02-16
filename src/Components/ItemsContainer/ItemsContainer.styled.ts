@@ -6,4 +6,6 @@ export const StyledContainer = styled(Container)`
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 `;

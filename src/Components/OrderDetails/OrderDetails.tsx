@@ -1,3 +1,4 @@
+// Import components
 import Table from "react-bootstrap/Table";
 
 interface OrderDetailsProps {
@@ -19,7 +20,7 @@ const OrderDetails = ({ orderDetails }: OrderDetailsProps) => {
       <tbody>
         {orderDetails.map((orderDetail: any, index: number) => {
           return (
-            <tr>
+            <tr key={index}>
               <td>{index + 1}</td>
               <td>{orderDetail.PurchaseOrderRowProductSKU}</td>
               <td>{orderDetail.PurchaseOrderRowQuantity}</td>

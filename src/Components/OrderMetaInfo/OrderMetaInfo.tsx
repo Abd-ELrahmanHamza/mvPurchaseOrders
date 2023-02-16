@@ -3,6 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 // Import styled components
 import { StyledListGroup, MetaTitle } from "./OrderMetaInfo.styled";
+
 interface OrderMetaInfoProps {
   PurchaseOrderAddress: string;
   PurchaseOrderContactPerson: string;

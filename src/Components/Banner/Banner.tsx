@@ -4,11 +4,10 @@ import Container from "react-bootstrap/Container";
 // Import assets
 import background from "../../Assets/Images/sale.jpg";
 
-import {
-  StyledContainer,
-  BuyButton,
-  InnerContainer,
-} from "./Banner.styled";
+// Import styled components
+import { StyledContainer, BuyButton, InnerContainer } from "./Banner.styled";
+
+// Import components
 import NavBar from "../NavBar/NavBar";
 
 const Banner = () => {
