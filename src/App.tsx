@@ -8,19 +8,14 @@ import Home from "./Pages/Home/Home";
 import mainTheme from "./Theme/main";
 import { ThemeProvider } from "styled-components";
 
-// Import contexts
-import { DataProvider } from "./Contexts/data";
-
 function App() {
   return (
     <ThemeProvider theme={mainTheme}>
-      <DataProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </BrowserRouter>
-      </DataProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
