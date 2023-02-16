@@ -6,18 +6,21 @@ import Home from "./Pages/Home/Home";
 
 // Import theme
 import mainTheme from "./Theme/main";
-import NavBar from "./Components/NavBar/NavBar";
 import { ThemeProvider } from "styled-components";
+
+// Import contexts
+import { DataProvider } from "./Contexts/data";
 
 function App() {
   return (
     <ThemeProvider theme={mainTheme}>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <DataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </DataProvider>
     </ThemeProvider>
   );
 }

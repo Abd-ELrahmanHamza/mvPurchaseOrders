@@ -5,7 +5,7 @@ import { StyledContainer } from "./ItemsContainer.styled";
 const ItemsContainer = () => {
   return (
     <StyledContainer>
-      <h1>Items Container</h1>
+      <h1>Products</h1>
       <>
         <CardItem />
       </>

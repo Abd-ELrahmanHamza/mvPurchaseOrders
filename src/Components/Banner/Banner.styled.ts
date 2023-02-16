@@ -13,23 +13,22 @@ export const StyledImage = styled(Image)`
 `;
 
 export const StyledContainer = styled(Container)`
+  width: 100%;
+  margin: 0;
+  background-color: red;
   background-color: ${({ theme }) => theme.background.primary};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 0;
+  padding: 0;
   color: ${({ theme }) => theme.text.secondary};
-
   text-align: center;
   h1 {
     text-align: center;
   }
+  background-image: url(${({ image }) => image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding-left: 0;
-    padding-top: 1rem;
-  }
+  height: 100vh;
 `;
 
 export const BuyButton = styled(Button)`
@@ -46,5 +45,21 @@ export const BuyButton = styled(Button)`
   &:active {
     background-color: ${({ theme }) => theme.background.secondary};
     color: ${({ theme }) => theme.text.primary};
+  }
+`;
+
+export const InnerContainer = styled(Container)`
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: 0;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 1rem;
+    width: 100%;
   }
 `;
