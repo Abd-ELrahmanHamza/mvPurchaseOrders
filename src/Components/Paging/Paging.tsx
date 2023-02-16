@@ -4,12 +4,14 @@ import Pagination from "react-bootstrap/Pagination";
 // Import styled components
 import { StyledPagination } from "./Paging.styled";
 
+// Import data
+import { data } from "../../Data/data";
 interface PagingProps {
   setPage: React.Dispatch<React.SetStateAction<number>>;
   page: number;
 }
 const Paging = ({ setPage, page }: PagingProps) => {
-  const numberOfPages = 22;
+  const numberOfPages = Math.ceil(data["mvPurchaseOrders"].length / 10);
   const handlePrev = () => {
     setPage((prev: number) => (prev > 1 ? prev - 1 : prev));
   };
@@ -37,12 +39,14 @@ const Paging = ({ setPage, page }: PagingProps) => {
           </Pagination.Item>
         ))}
       {page + 3 < numberOfPages && <Pagination.Ellipsis />}
-      <Pagination.Item
-        onClick={() => setPage(numberOfPages)}
-        active={page === numberOfPages}
-      >
-        {numberOfPages}
-      </Pagination.Item>
+      {numberOfPages !== 1 && (
+        <Pagination.Item
+          onClick={() => setPage(numberOfPages)}
+          active={page === numberOfPages}
+        >
+          {numberOfPages}
+        </Pagination.Item>
+      )}
       <Pagination.Next onClick={handleNext} disabled={page === numberOfPages} />
       <Pagination.Last
         onClick={() => setPage(numberOfPages)}

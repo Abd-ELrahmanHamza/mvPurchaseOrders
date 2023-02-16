@@ -13,7 +13,7 @@ const ItemsContainer = () => {
   return (
     <StyledContainer id="products">
       <h1>Products</h1>
-      <CardItems />
+      <CardItems page={page} />
       <Paging setPage={setPage} page={page} />
     </StyledContainer>
   );

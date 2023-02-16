@@ -21,9 +21,8 @@ const Banner = () => {
             fantastic 50% discount on all of our products for a limited time.
             Yes, that's right - half price on everything!
           </h1>
-          <BuyButton variant="light">Buy now</BuyButton>
+          <BuyButton href="#products" variant="light">Buy now</BuyButton>
         </Container>
-        {/* <StyledImage src={BannerPhoto}></StyledImage> */}
       </InnerContainer>
     </StyledContainer>
   );
