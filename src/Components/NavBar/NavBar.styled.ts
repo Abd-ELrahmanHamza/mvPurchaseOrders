@@ -1,3 +1,4 @@
+// Import styled
 import styled from "styled-components";
 
 // Import Bootstrap components

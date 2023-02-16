@@ -1,5 +1,8 @@
-import { Accordion } from "react-bootstrap";
+// Import styled
 import styled from "styled-components";
+
+// Import bootstrap components
+import { Accordion } from "react-bootstrap";
 
 export const AccordionHeader = styled(Accordion.Header)`
   button {
@@ -10,4 +13,5 @@ export const AccordionHeader = styled(Accordion.Header)`
 
 export const AccordionBody = styled(Accordion.Body)`
   background-color: ${({ theme }) => theme.text.secondary};
+  overflow: auto;
 `;

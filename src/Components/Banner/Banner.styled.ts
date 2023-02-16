@@ -1,5 +1,6 @@
-import styled from "styled-components";
+// Import bootstrap components
 import Image from "react-bootstrap/Image";
+import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 

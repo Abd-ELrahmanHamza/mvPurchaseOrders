@@ -1,5 +1,8 @@
-import { Container } from "react-bootstrap";
+// Import styled
 import styled from "styled-components";
+
+// Import bootstrap components
+import { Container } from "react-bootstrap";
 
 export const StyledContainer = styled(Container)`
   margin-top: 20px;
