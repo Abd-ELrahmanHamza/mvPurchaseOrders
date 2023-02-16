@@ -7,17 +7,16 @@ import { NavbarBrand, StyledNavbar } from "./NavBar.styled";
 
 function NavBar() {
   return (
-    <StyledNavbar bg="light" expand="sm">
+    <StyledNavbar bg="light" expand="sm" id="home">
       <Container>
-        <NavbarBrand href="#">
+        <NavbarBrand>
           Shop <sub>RA</sub>
         </NavbarBrand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action2">Items</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#products">Products</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

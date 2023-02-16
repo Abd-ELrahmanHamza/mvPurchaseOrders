@@ -1,4 +1,4 @@
-import { Accordion, Card } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import styled from "styled-components";
 
 export const AccordionHeader = styled(Accordion.Header)`

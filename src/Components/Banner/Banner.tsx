@@ -1,13 +1,10 @@
 // Import bootstrap components
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 
 // Import assets
-import BannerPhoto from "../../Assets/Images/shope.jpg";
 import background from "../../Assets/Images/sale.jpg";
 
 import {
-  StyledImage,
   StyledContainer,
   BuyButton,
   InnerContainer,

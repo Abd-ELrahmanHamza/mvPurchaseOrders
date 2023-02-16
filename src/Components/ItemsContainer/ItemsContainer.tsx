@@ -1,10 +1,9 @@
-import { Container } from "react-bootstrap";
-import CardItem from "../CardItem/CardItem";
+import CardItem from "../CardItems/CardItems";
 
 import { StyledContainer } from "./ItemsContainer.styled";
 const ItemsContainer = () => {
   return (
-    <StyledContainer>
+    <StyledContainer id="products">
       <h1>Products</h1>
       <>
         <CardItem />

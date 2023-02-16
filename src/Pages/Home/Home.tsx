@@ -14,7 +14,7 @@ const Home = () => {
   const { setProducts } = useData();
   useEffect(() => {
     setProducts(data);
-  }, []);
+  }, [setProducts]);
   console.log(data);
   return (
     // <Container>
